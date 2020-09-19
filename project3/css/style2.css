@@ -1,0 +1,257 @@
+body {
+    margin: 0%;
+    background: -webkit-linear-gradient(35deg, #ff0078, #17b0ff, #3716c4, #9000ff, #ff0078);
+    background-size: 300% 300%;
+    -webkit-animation: gradient 5s ease infinite;
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+* {
+    box-sizing: border-box;
+    min-width: 0;
+    padding: 0;
+}
+
+*/ .gradient {
+    background: linear-gradient(270deg, #319ff9, #00d05a);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 10s ease infinite;
+    -moz-animation: gradient 10s ease infinite;
+    -o-animation: gradient 10s ease infinite;
+    animation: gradient 10s ease infinite;
+}
+
+@-webkit-keyframes linearGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-o-keyframes gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+.head {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    margin-left: 15px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30pt;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: color 0.2s linear;
+    -webkit-transition: color 0.2s linear;
+    -moz-transition: color 0.2s linear;
+    -ms-transition: color 0.2s linear;
+    -o-transition: color 0.2s linear;
+}
+
+.title:hover {
+    color: rgb(255, 74, 189)
+}
+
+.nav {
+    /* float: right; */
+    width: 17%;
+    /* display: flex; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    align-self: center;
+    justify-content: space-between;
+    margin-right: 15px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.ssylka {
+    /* margin-right: 5%; */
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    transition: color .1s linear;
+}
+
+.ssylka::after {
+    /*color: rgb(198, 157, 255);
+*/
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(198, 157, 255);
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: opacity .5s linear;
+    -webkit-transition: opacity .5s linear;
+    -moz-transition: opacity .5s linear;
+    -ms-transition: opacity .5s linear;
+    -o-transition: opacity .5s linear;
+}
+
+.ssylka:hover {
+    color: rgb(198, 157, 255);
+}
+
+.ssylka:hover:after,
+.ssylka.active:after {
+    opacity: 1;
+}
+
+.ssylka.active {
+    color: rgb(198, 157, 255);
+}
+
+
+/* .ssylka:after {
+content: "";
+display: block;
+width: 100%;
+height: 3px;
+} */
+
+a:visited {
+    color: white;
+    text-decoration: white;
+}
+
+a {
+    margin-right: 1%;
+    color: white;
+    text-decoration: white;
+}
+
+a:active {
+    color: white;
+    text-decoration: white;
+}
+
+
+/* @media screen or (max-width: 1000px) {
+.container {
+    display: block;
+}
+.right {
+    float: left;
+}
+} */
+
+.container {
+    max-width: 95%;
+    /* margin: 0% auto; */
+    margin-left: 2.5%;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+    display: block;
+    text-align: center;
+}
+
+
+/* .margin {
+    margin-top: 100px;
+} */
+
+.image {
+    max-width: 100%;
+}
+
+.tpic1 {
+    max-width: 100%;
+}
+
+.tpic1:active {
+    max-width: 100%;
+}
+
+.tpic2 {
+    max-width: 100%;
+}
+
+.tpic3 {
+    max-width: 100%;
+}
+
+.rights {
+    font-family: 'Oswald', sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+.b0tt0m {
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    padding-bottom: 1%;
+    color: black;
+}
